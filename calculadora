@@ -1,0 +1,27 @@
+# inicio del programa
+
+
+print ("....:calculadora:....") 
+
+num1 = float(input("ingrese un numero: "))
+num2 = float(input("ingrese otro numero: "))
+
+operacion = input("ingrese la operacion: ").upper()# (.upper) para convertir los caracteres a mayuscula
+
+if operacion == "S":
+    suma = num1 + num2
+    print(f"\nel resultado de la suma es : {suma} ")# el(\n) para el salto de linea
+elif operacion == "R":
+    resta = num1 - num2
+    print(F"\nel resultado de la resta es: {resta}")
+elif operacion == "M" or operacion == "P": # el (:) siempre al acabar una funcion
+    mult= num1*num2
+    print(f"\nel resultado de la multiplicacion es:{mult}")
+elif operacion == "D":
+    div= num1/num2
+    print(f"\nel resultado de la divicion es:{div:.2f}")# el (:.f) corta los decimales al numero que le asignes
+else:
+    print("se equivoco de operacion")
+
+
+#fin del programa
